@@ -28,42 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.rbBrief = new System.Windows.Forms.RadioButton();
+            this.rbPaket = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
-            this.domainUpDown2 = new System.Windows.Forms.DomainUpDown();
+            this.menuEntfernung = new System.Windows.Forms.DomainUpDown();
+            this.menuGewicht = new System.Windows.Forms.DomainUpDown();
+            this.txtPorto = new System.Windows.Forms.TextBox();
+            this.cboxSendungsart = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.btnBerechnen = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // radioButton1
+            // rbBrief
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(110, 62);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(85, 17);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbBrief.AutoSize = true;
+            this.rbBrief.Location = new System.Drawing.Point(110, 63);
+            this.rbBrief.Name = "rbBrief";
+            this.rbBrief.Size = new System.Drawing.Size(46, 17);
+            this.rbBrief.TabIndex = 0;
+            this.rbBrief.TabStop = true;
+            this.rbBrief.Text = "Brief";
+            this.rbBrief.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rbPaket
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(201, 62);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(85, 17);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbPaket.AutoSize = true;
+            this.rbPaket.Location = new System.Drawing.Point(201, 63);
+            this.rbPaket.Name = "rbPaket";
+            this.rbPaket.Size = new System.Drawing.Size(53, 17);
+            this.rbPaket.TabIndex = 1;
+            this.rbPaket.TabStop = true;
+            this.rbPaket.Text = "Paket";
+            this.rbPaket.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 100);
+            this.label1.Location = new System.Drawing.Point(13, 101);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 13);
             this.label1.TabIndex = 2;
@@ -72,7 +79,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 135);
+            this.label2.Location = new System.Drawing.Point(13, 136);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 13);
             this.label2.TabIndex = 3;
@@ -81,7 +88,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 173);
+            this.label3.Location = new System.Drawing.Point(13, 174);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(46, 13);
             this.label3.TabIndex = 4;
@@ -90,41 +97,106 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 281);
+            this.label4.Location = new System.Drawing.Point(13, 282);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(32, 13);
             this.label4.TabIndex = 5;
             this.label4.Text = "Porto";
             // 
-            // domainUpDown1
+            // menuEntfernung
             // 
-            this.domainUpDown1.Location = new System.Drawing.Point(110, 133);
-            this.domainUpDown1.Name = "domainUpDown1";
-            this.domainUpDown1.Size = new System.Drawing.Size(120, 20);
-            this.domainUpDown1.TabIndex = 6;
-            this.domainUpDown1.Text = "domainUpDown1";
+            this.menuEntfernung.Location = new System.Drawing.Point(110, 134);
+            this.menuEntfernung.Name = "menuEntfernung";
+            this.menuEntfernung.Size = new System.Drawing.Size(120, 20);
+            this.menuEntfernung.TabIndex = 6;
             // 
-            // domainUpDown2
+            // menuGewicht
             // 
-            this.domainUpDown2.Location = new System.Drawing.Point(110, 173);
-            this.domainUpDown2.Name = "domainUpDown2";
-            this.domainUpDown2.Size = new System.Drawing.Size(120, 20);
-            this.domainUpDown2.TabIndex = 7;
-            this.domainUpDown2.Text = "domainUpDown2";
+            this.menuGewicht.Location = new System.Drawing.Point(110, 174);
+            this.menuGewicht.Name = "menuGewicht";
+            this.menuGewicht.Size = new System.Drawing.Size(120, 20);
+            this.menuGewicht.TabIndex = 7;
+            // 
+            // txtPorto
+            // 
+            this.txtPorto.Location = new System.Drawing.Point(110, 281);
+            this.txtPorto.Name = "txtPorto";
+            this.txtPorto.Size = new System.Drawing.Size(120, 20);
+            this.txtPorto.TabIndex = 8;
+            // 
+            // cboxSendungsart
+            // 
+            this.cboxSendungsart.FormattingEnabled = true;
+            this.cboxSendungsart.Location = new System.Drawing.Point(109, 97);
+            this.cboxSendungsart.Name = "cboxSendungsart";
+            this.cboxSendungsart.Size = new System.Drawing.Size(148, 21);
+            this.cboxSendungsart.TabIndex = 9;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(236, 141);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(21, 13);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "km";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(236, 181);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(19, 13);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "kg";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(236, 284);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(13, 13);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "€";
+            // 
+            // btnBerechnen
+            // 
+            this.btnBerechnen.Location = new System.Drawing.Point(354, 141);
+            this.btnBerechnen.Name = "btnBerechnen";
+            this.btnBerechnen.Size = new System.Drawing.Size(126, 58);
+            this.btnBerechnen.TabIndex = 13;
+            this.btnBerechnen.Text = "Porto berechnen";
+            this.btnBerechnen.UseVisualStyleBackColor = true;
+            // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(354, 205);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(126, 58);
+            this.btnClear.TabIndex = 14;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.domainUpDown2);
-            this.Controls.Add(this.domainUpDown1);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.btnBerechnen);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.cboxSendungsart);
+            this.Controls.Add(this.txtPorto);
+            this.Controls.Add(this.menuGewicht);
+            this.Controls.Add(this.menuEntfernung);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.rbPaket);
+            this.Controls.Add(this.rbBrief);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -134,14 +206,21 @@
 
         #endregion
 
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton rbBrief;
+        private System.Windows.Forms.RadioButton rbPaket;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DomainUpDown domainUpDown1;
-        private System.Windows.Forms.DomainUpDown domainUpDown2;
+        private System.Windows.Forms.DomainUpDown menuEntfernung;
+        private System.Windows.Forms.DomainUpDown menuGewicht;
+        private System.Windows.Forms.TextBox txtPorto;
+        private System.Windows.Forms.ComboBox cboxSendungsart;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnBerechnen;
+        private System.Windows.Forms.Button btnClear;
     }
 }
 
