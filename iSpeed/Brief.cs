@@ -5,7 +5,7 @@ using System.Text;
 
 namespace iSpeed
 {
-    public class Brief
+    public class Brief : Sendung
     {
     }
 }

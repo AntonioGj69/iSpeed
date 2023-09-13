@@ -5,7 +5,7 @@ using System.Text;
 
 namespace iSpeed
 {
-    public class Paket
+    public class Paket : Sendung
     {
     }
 }
