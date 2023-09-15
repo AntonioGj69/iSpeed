@@ -43,6 +43,12 @@
             this.label7 = new System.Windows.Forms.Label();
             this.btnBerechnen = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Format = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Entfernung = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Gewicht = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Porto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // rbBrief
@@ -177,11 +183,45 @@
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Format,
+            this.Entfernung,
+            this.Gewicht,
+            this.Porto});
+            this.dataGridView1.Location = new System.Drawing.Point(9, 330);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(471, 170);
+            this.dataGridView1.TabIndex = 15;
+            // 
+            // Format
+            // 
+            this.Format.HeaderText = "Format";
+            this.Format.Name = "Format";
+            // 
+            // Entfernung
+            // 
+            this.Entfernung.HeaderText = "Entfernung";
+            this.Entfernung.Name = "Entfernung";
+            // 
+            // Gewicht
+            // 
+            this.Gewicht.HeaderText = "Gewicht";
+            this.Gewicht.Name = "Gewicht";
+            // 
+            // Porto
+            // 
+            this.Porto.HeaderText = "Porto";
+            this.Porto.Name = "Porto";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(492, 512);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnBerechnen);
             this.Controls.Add(this.label7);
@@ -199,6 +239,7 @@
             this.Controls.Add(this.rbBrief);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -221,6 +262,11 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnBerechnen;
         private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Format;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Entfernung;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Gewicht;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Porto;
     }
 }
 
