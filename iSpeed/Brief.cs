@@ -7,5 +7,12 @@ namespace iSpeed
 {
     public class Brief : Sendung
     {
+        public int Größe
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }

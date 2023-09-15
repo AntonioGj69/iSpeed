@@ -7,5 +7,12 @@ namespace iSpeed
 {
     public class Paket : Sendung
     {
+        public int Gewicht
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }
