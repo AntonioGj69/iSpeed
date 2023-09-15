@@ -7,6 +7,11 @@ namespace iSpeed
 {
     public class Brief : Sendung
     {
+
+        public Brief(double Grundtarif) : base(Grundtarif)
+        {
+            
+        }
         public int Größe { get; set; }
     }
 }
