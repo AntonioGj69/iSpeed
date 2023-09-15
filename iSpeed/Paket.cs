@@ -7,6 +7,10 @@ namespace iSpeed
 {
     public class Paket : Sendung
     {
-        public int Gewicht { get; set; }
+        public readonly int Gewicht;
+    }
+    public override string ToString()
+    {
+        
     }
 }

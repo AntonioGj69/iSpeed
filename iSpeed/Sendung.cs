@@ -12,12 +12,10 @@ namespace iSpeed
             this.Grundtarif = 0.30 + km * 0.05;
         }
 
-        public double Grundtarif
-        {
-            get => default;
-            set
-            {
-            }
-        }
+        public double Grundtarif { get; set; }
+    }
+    public override string ToString()
+    {
+
     }
 }

@@ -12,6 +12,10 @@ namespace iSpeed
         {
             
         }
-        public int Größe { get; set; }
+        public readonly int Groeße;
+    }
+    public override string ToString()
+    {
+
     }
 }
